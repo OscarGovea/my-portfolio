@@ -1,5 +1,5 @@
 import { personalInfo } from "@/lib/data";
-import { Mail, Github, MapPin, Linkedin } from "lucide-react";
+import { Mail, Github, MapPin, Linkedin, PhoneCallIcon } from "lucide-react";
 import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
 
@@ -41,7 +41,7 @@ export default function HeroSection() {
               variants={childVariants}
             >
               {personalInfo.name}{" "}
-              <span className="inline-block animate-pulse">✨</span>
+              {/* <span className="inline-block animate-pulse">✨</span> */}
             </motion.h1>
 
             <motion.p
@@ -61,7 +61,7 @@ export default function HeroSection() {
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
                 <MapPin className="h-4 w-4 mr-2" />
-                📍 {personalInfo.location}
+                  {personalInfo.location}
               </motion.div>
 
               <motion.a
@@ -71,7 +71,18 @@ export default function HeroSection() {
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
                 <Mail className="h-4 w-4 mr-2" />
-                ✉️ {personalInfo.email}
+                  {personalInfo.email}
+              </motion.a>
+
+              <motion.a
+                href={`https://wa.me/524621101980`}
+                target="_blank"
+                className="flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors"
+                variants={childVariants}
+                whileHover={{ scale: 1.05, color: "#4b5563" }}
+              >
+                <PhoneCallIcon className="h-4 w-4 mr-2" />
+                  {personalInfo.phone}
               </motion.a>
 
               <motion.a
@@ -83,7 +94,7 @@ export default function HeroSection() {
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
                 <Github className="h-4 w-4 mr-2" />
-                🌟 GitHub
+                  GitHub
               </motion.a>
 
               <motion.a
@@ -95,7 +106,7 @@ export default function HeroSection() {
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
                 <Linkedin className="h-4 w-4 mr-2" />
-                🔗 LinkedIn
+                  LinkedIn
               </motion.a>
             </motion.div>
           </div>
@@ -112,7 +123,7 @@ export default function HeroSection() {
                 src={personalInfo.profilePicture}
                 alt="Profile"
                 className="w-48 md:w-60 rounded-full relative ring-2 ring-purple-500/50"
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "cover",filter: "brightness(0.8)" }}
               />
             </div>
           </motion.div>

@@ -7,13 +7,13 @@ import { motion } from "framer-motion";
 export default function EducationSection() {
   return (
     <section
-      id="education"
+      id="educacion"
       className="py-12 bg-gradient-to-b from-muted/10 to-background"
     >
       <div className="container max-w-4xl mx-auto px-6 md:px-4">
         <MotionWrapper>
           <h2 className="text-2xl font-bold mb-8 text-center md:text-left">
-            🎓 Education
+            🎓 Educación
           </h2>
         </MotionWrapper>
 
