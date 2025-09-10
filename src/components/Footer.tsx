@@ -26,7 +26,7 @@ export default function Footer() {
             viewport={{ once: true }}
             whileHover={{ scale: 1.01 }}
           >
-            Contruido con{" "}
+            Construido con{" "}
             <motion.span
               className="inline-block"
               initial={{ rotate: 0 }}

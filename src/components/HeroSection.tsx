@@ -35,7 +35,7 @@ export default function HeroSection() {
           initial="hidden"
           animate="visible"
         >
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-left" style={{ marginTop: "15px" }}>
             <motion.h1
               className="text-4xl font-bold mb-2"
               variants={childVariants}
