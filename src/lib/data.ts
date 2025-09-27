@@ -15,7 +15,7 @@ export const workExperience = [
     company: "KSP Technologies",
     location: "León, Guanajuato. (remoto)",
     position: "HDI | Desarrollador de Software",
-    period: "Mayo 2022 – Actual",
+    period: "Enero 2023 – Actual",
     achievements: [
       "Desarrollo y mantenimiento de funcionalidades críticas para el sistema de emisión masiva de pólizas individuales, utilizando Blazor y Razor en el frontend y ASP.NET Core en el backend.",
       "Integración con servicios internos de validación de agencias, tarifas y plantillas de negocio tradicional, mediante Web API RESTful y Entity Framework Core.",
