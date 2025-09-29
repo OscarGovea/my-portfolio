@@ -28,7 +28,7 @@ A sleek, responsive portfolio website built with **Astro**, **React**, and **Tai
 ### Installation
 
 ```bash
-git clone https://github.com/yourusername/my-portfolio.git
+git clone https://github.com/OscarGovea/my-portfolio
 cd my-portfolio
 
 # Install dependencies
